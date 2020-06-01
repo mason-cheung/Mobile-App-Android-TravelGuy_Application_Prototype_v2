@@ -11,14 +11,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.prototype_v2.R;
 
+import static com.example.prototype_v2.entities.Constants.BOOKING_ACTIVITY_CODE;
+
 public class RestaurantDetailsScrollingActivity extends AppCompatActivity {
 
     Restaurant restaurant;
+    Button reserveBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +46,15 @@ public class RestaurantDetailsScrollingActivity extends AppCompatActivity {
         restaurantNameTextView.setText(restaurant.getName());
         restaurantAddressTextView.setText(restaurant.getAddress());
         restaurantPhoneTextView.setText(restaurant.getPhone());
+
+        reserveBtn = findViewById(R.id.reserveBtn);
+        reserveBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goToBooking = new Intent(RestaurantDetailsScrollingActivity.this, BookingScrollingActivity.class);
+                startActivityForResult(goToBooking, BOOKING_ACTIVITY_CODE);
+            }
+        });
 
 /*
         View rootView = restaurantImageView.getRootView();

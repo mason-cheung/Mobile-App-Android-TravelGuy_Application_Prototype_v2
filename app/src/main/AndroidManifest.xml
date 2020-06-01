@@ -5,13 +5,17 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:label=" "
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activities.MenuScrollingActivity"
+            android:name=".activities.BookingScrollingActivity"
+            android:label="@string/title_activity_booking_scrolling"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activities.MenuScrollingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".activities.RestaurantDetailsScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -20,9 +24,9 @@
             android:name=".activities.InsertRestaurantScrollingActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.HomeActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/SplashTheme">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

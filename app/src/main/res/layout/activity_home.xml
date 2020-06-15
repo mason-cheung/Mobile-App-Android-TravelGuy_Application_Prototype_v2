@@ -8,104 +8,112 @@
     tools:context=".activities.HomeActivity">
 
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageButton
-            android:id="@+id/restaurantListBtn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="64dp"
-            android:background="@color/design_default_color_background"
-            app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/restaurant_map_pointer_small" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Restaurant List"
-            android:textAlignment="center"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/restaurantListBtn"
-            app:layout_constraintStart_toStartOf="@+id/restaurantListBtn"
-            app:layout_constraintTop_toBottomOf="@+id/restaurantListBtn" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Upload new restaurant"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/uploadRestBtn"
-            app:layout_constraintStart_toStartOf="@+id/uploadRestBtn"
-            app:layout_constraintTop_toBottomOf="@+id/uploadRestBtn" />
+            <ImageButton
+                android:id="@+id/restaurantListBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="64dp"
+                android:background="@color/design_default_color_background"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/restaurant_map_pointer_small" />
 
-        <ImageButton
-            android:id="@+id/uploadRestBtn"
-            android:layout_width="0dp"
-            android:layout_height="144dp"
-            android:layout_marginTop="88dp"
-            android:background="@color/design_default_color_background"
-            app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/textView"
-            app:srcCompat="@android:drawable/ic_menu_upload" />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Restaurant List"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/restaurantListBtn"
+                app:layout_constraintStart_toStartOf="@+id/restaurantListBtn"
+                app:layout_constraintTop_toBottomOf="@+id/restaurantListBtn" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="14dp"
-            app:layout_constraintGuide_percent="0.03" />
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload new restaurant"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/uploadRestBtn"
+                app:layout_constraintStart_toStartOf="@+id/uploadRestBtn"
+                app:layout_constraintTop_toBottomOf="@+id/uploadRestBtn" />
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            app:layout_constraintGuide_begin="383dp"
-            app:layout_constraintGuide_percent="0.97" />
+            <ImageButton
+                android:id="@+id/uploadRestBtn"
+                android:layout_width="0dp"
+                android:layout_height="144dp"
+                android:layout_marginTop="88dp"
+                android:background="@color/design_default_color_background"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:srcCompat="@android:drawable/ic_menu_upload" />
 
-        <Button
-            android:id="@+id/signOutBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Sign Out"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="14dp"
+                app:layout_constraintGuide_percent="0.03" />
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:text="Welcome Back! "
-            app:layout_constraintBottom_toTopOf="@+id/restaurantListBtn"
-            app:layout_constraintEnd_toStartOf="@+id/nameView"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="@+id/guideline5"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.488" />
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="383dp"
+                app:layout_constraintGuide_percent="0.97" />
 
-        <TextView
-            android:id="@+id/nameView"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="220dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toTopOf="@+id/restaurantListBtn"
-            app:layout_constraintEnd_toStartOf="@+id/guideline6"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.488" />
+            <Button
+                android:id="@+id/signOutBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Out"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Welcome Back! "
+                app:layout_constraintBottom_toTopOf="@+id/restaurantListBtn"
+                app:layout_constraintEnd_toStartOf="@+id/nameView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.488" />
+
+            <TextView
+                android:id="@+id/nameView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="220dp"
+                android:text="TextView"
+                app:layout_constraintBottom_toTopOf="@+id/restaurantListBtn"
+                app:layout_constraintEnd_toStartOf="@+id/guideline6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.488" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
 
 </FrameLayout>

@@ -73,7 +73,7 @@ public class HomeActivity extends AppCompatActivity {
             String personName = acct.getDisplayName();
 
             nameText.setText(personName);
-            
+
         }
 
         signOutBtn.setOnClickListener(new View.OnClickListener() {
